@@ -1,123 +1,179 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  /* Header stays at the top */
-  .header {
-    background-color: #000; /* black background like Abstract site */
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Logo settings */
-  .logo img {
-    height: 40px; /* adjust if needed */
-  }
-  
-  /* Search bar settings */
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input {
-    padding: 8px;
-    margin-right: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .search-bar button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Main takes up leftover space */
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  /* Footer at bottom */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Footer links style */
-  .footer-links {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links a {
-    color: #ccc;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer-links a:hover {
-    color: white;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .categories {
-    padding: 3rem 0;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 2rem; /* space between items */
-  }
-
-  .site-header {
-  background-color: #000; /* black header like Abstract */
-  padding: 20px;
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #000;
 }
 
-.logo-link {
+/* Header */
+header {
+  background: #000;
+  padding: 20px 40px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  height: 32px;
-  margin-right: 10px; /* space between logo and Help Center text */
+  display: flex;
+  align-items: center;
 }
 
-.help-center-link {
-  color: white;
+.logo img {
+  height: 28px;
+}
+
+.logo span {
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
-  text-decoration: none;
+  margin-left: 10px;
 }
 
-.help-center-link:hover {
-  text-decoration: underline; /* optional: underline on hover */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
 }
+
+.btn {
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.black-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.black-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.blue-btn {
+  background-color: #4C5FD5;
+  color: #fff;
+  border: none;
+}
+
+.blue-btn:hover {
+  background-color: #3b4cc4;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #dadbf1;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #999;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  margin-bottom: 40px;
+}
+
+.footer-brand img {
+  height: 24px;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 160px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #bbb;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+
+
+
 
   
   

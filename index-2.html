@@ -1,120 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abstract Help Center</title>
-  <link rel="stylesheet" href="style-2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style-2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="container header__container">
+  <header>
+    <div class="container nav-container">
       <div class="logo">
-        <a href="/">
-              <img src="images/60c388bf3c3ae4d1d10653e7_Abstract_Wordmark-White.svg" alt="Abstract Logo" class="logo">
-            </a>
-            <span class="help-center-text"><a href="#">Help Center</a></span>
-        <h1>How Can We Help?</h1>
-        <input type="text" placeholder="Search">
-        <button><i class="fas fa-search"></i></button>
+        <img src="images/60c388bf3c3ae4d1d10653e7_Abstract_Wordmark-White.svg" alt="Abstract Logo" />
+        <span>Abstract</span>
+      </div>
+      <div class="nav-buttons">
+        <button class="btn black-btn">Submit a request</button>
+        <button class="btn blue-btn">Sign in</button>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h1>How can we help?</h1>
-    </div>
-  </section>
-
-  <!-- Categories Section -->
-  <section class="categories">
-    <div class="container grid">
-      <div class="card">
-        <img src="images/icon-versions.png" alt="Abstract" style="width: 200px; height: auto;">
-        <h2>Using Abstract</h2>
-        <p>Learn how to set up and manage projects, and invite collaborators.</p>
-        <a href="#">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="images/icon-account.png" style="width: 200px; height: auto;">
-        <h2>Manage your account</h2>
-        <p>Configure your account settings, such as your email, profile details, and password.</p>
-        <a href="#">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="images/icon-organizations.png" style="width: 200px; height: auto;">
-        <h2>Manage organizations</h2>
-        <p>Learn how to manage your organization's members, teams, and billing settings.</p>
-        <a href="#">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="images/icon-billing.png" style="width: 200px; height: auto;">
-        <h2>Manage billing</h2>
-        <p>Change subscriptions and payment details for your organization.</p>
-        <a href="#">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="images/icon-authenticate.png" style="width: 200px; height: auto;">
-        <h2>Authenticate to Abstract</h2>
-        <p>Set up and configure SSO, SCIM, and SCIM provisioning.</p>
-        <a href="images/icon-authenticate.png">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="images/icon-comment.png" style="width: 200px; height: auto;">
-        <h2>Abstract support</h2>
-        <p>Get in touch with a human.</p>
-        <a href="images/icon-comment.png">Learn More →</a>
-      </div>
+    <h1>How can we help?</h1>
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search" />
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer-links">
-        <a href="#">About Abstract</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="images/60c388bf3c3ae4d1d10653e7_Abstract_Wordmark-White.svg" alt="Abstract Logo" />
+        <p>© 2025 Abstract Studio Design, Inc. All rights reserved.</p>
       </div>
-      <p>&copy; 2025 Abstract. All rights reserved.</p>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Abstract</h4>
+          <ul>
+            <li>Start Trial</li>
+            <li>Pricing</li>
+            <li>Download</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li>Blog</li>
+            <li>Help Center</li>
+            <li>Release Notes</li>
+            <li>Status</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Dribbble</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Legal</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>info@abstract.com</p>
+        </div>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
 
 
-  
-   
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const helpButton = document.getElementById('help-button');
-            const helpContent = document.getElementById('help-content');
-            const closeHelpButton = document.getElementById('close-help');
-            const openChatbotButton = document.getElementById('open-chatbot');
-            const chatbotContainer = document.getElementById('chatbot-container');
 
-            if (helpButton && helpContent && closeHelpButton && openChatbotButton && chatbotContainer) {
-                helpButton.addEventListener('click', function() {
-                    helpContent.classList.toggle('hidden');
-                });
 
-                closeHelpButton.addEventListener('click', function() {
-                    helpContent.classList.add('hidden');
-                });
 
-                openChatbotButton.addEventListener('click', function() {
-                    chatbotContainer.classList.remove('hidden');
-                    // Add your actual chatbot integration here
-                });
-            }
-        });
-    </script>
-</body>
-</html>
+
+
+
